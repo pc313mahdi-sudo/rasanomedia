@@ -1,0 +1,25 @@
+name: rasayar
+description: Rasayar creative content studio MVP for Android and iOS.
+publish_to: 'none'
+version: 0.5.3+4
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  gal: ^2.3.0
+  path_provider: ^2.1.5
+  share_plus: ^10.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

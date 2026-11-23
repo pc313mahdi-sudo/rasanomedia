@@ -1,21 +1,23 @@
 
 workflows:
   rasayar-ios:
-    name: Rasayar iOS Build
+    name: Rasayar iOS IPA
     max_build_duration: 120
     instance_type: mac_mini_m2
 
     environment:
       flutter: 3.47.7
       xcode: latest
+      cocoapods: default
 
     scripts:
       - name: Get Flutter dependencies
         script: flutter pub get
 
-      - name: Build iOS application
-        script: flutter build ios --debug --no-codesign
+      - name: Build unsigned iOS IPA
+        script: flutter build ipa --release --no-codesign
 
     artifacts:
-      - build/ios/iphoneos/**/*.app
+      - build/ios/ipa/*.ipa
+      - build/ios/archive/*.xcarchive
       - /tmp/xcodebuild_logs/*.log

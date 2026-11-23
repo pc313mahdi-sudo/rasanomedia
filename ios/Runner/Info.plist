@@ -65,5 +65,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-</dict>
+<key>NSPhotoLibraryAddUsageDescription</key><string>Rasayar needs permission to save created images to your photo library.</string><key>NSPhotoLibraryUsageDescription</key><string>Rasayar uses your photo library to save created images.</string></dict>
 </plist>
